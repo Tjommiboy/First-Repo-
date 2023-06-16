@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate est similique eveniet deleniti molestias voluptates possimus itaque? Numquam voluptas quidem recusandae cum sed! Officiis incidunt distinctio explicabo cupiditate atque voluptates.</p>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./JS/java.js" defer type="module"></script>
+  </head>
+
+  <header>
+    <h1 class="h1class">JOKES</h1>
+    <div class="mybuttons">
+      <button class="generalJokes" toggle="displayGeneral">
+        General Jokes
+      </button>
+      <button class="programmingJokes" toggle="displayProgramming">
+        Programming Jokes
+      </button>
+    </div>
+  </header>
+
+  <body>
+    <div class="wholepage">
+      <div class="jokes">
+        Loading...
+        <div class="cards"></div>
+      </div>
+    </div>
+  </body>
 </html>
