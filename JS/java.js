@@ -27,15 +27,21 @@ async function getJokes() {
 
 getJokes();
 
+ generalJokes.addEventListener("click", () => {
+  const cards = document.querySelectorAll(".cards");
+  cards.forEach(card => {
+    (card.querySelector(".type").innerHTML === " general") ? 
+      card.classList.add("show") :
+      card.classList.add("hidden")
+  })
+})
 
-
-
-
-
-
-
-
-
-
-
-
+ 
+programmingJokes.addEventListener("click", () => {
+  const cards = document.querySelectorAll(".cards");
+  cards.forEach(card => {
+    (card.querySelector(".type").innerHTML === " programming") ? 
+      card.classList.add("show") :
+      card.classList.add("hidden")
+  })
+})
